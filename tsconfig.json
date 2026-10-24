@@ -1,0 +1,53 @@
+{
+    "compilerOptions": {
+        // Type Checking
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "alwaysStrict": true,
+        "exactOptionalPropertyTypes": false,
+        "noFallthroughCasesInSwitch": false,
+        "noImplicitAny": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strict": true,
+        // "strictBindCallApply": true,
+        // "strictBuiltinIteratorReturn": true,
+        // "strictFunctionTypes": true,
+        // "strictNullChecks": true,
+        // "strictPropertyInitialization": true,
+        "useUnknownInCatchVariables": false,
+        // Modules
+        "ignoreDeprecations": "6.0",
+        "module": "amd",
+        "moduleResolution": "node",
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        },
+        "rootDir": "./src/",
+        // Emit
+        "outFile": "./dist/svgchart.js",
+        "removeComments": true,
+        // Interop Constraints
+        "esModuleInterop": true,
+        // Language and Environment
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "target": "esnext"
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

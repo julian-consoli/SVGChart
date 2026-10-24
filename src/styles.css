@@ -1,0 +1,27 @@
+.svg-chart {
+    /* Sample Theme */
+    --chart-data-color-base: #247a70;
+    --chart-data-color-0: #093c95;
+    --chart-data-color-1: #8b61a1;
+    --chart-data-color-2: #ec1814;
+    --chart-data-color-3: #e9e90f;
+    --chart-data-color-4: #70ae1c;
+    --chart-border-width: 2px;
+    --chart-border-color: #889fb3;
+    --chart-bg: #1c1b22;
+
+    block-size: auto;
+    inline-size: 350px;
+
+    &:is(.pie, .donut) {
+        path {
+            transform: scale(1);
+            transform-origin: center;
+            transition: transform ease-out 0.125s;
+
+            &:hover {
+                transform: scale(1.04);
+            }
+        }
+    }
+}
