@@ -2,7 +2,7 @@
   "name": "SVG Chart",
   "version": "0.1.0",
   "description": "A simple graph/chart generator.",
-  "homepage": "https://github.com/owner/project#readme",
+  "homepage": "https://github.com/julian-consoli/SVGChart#readme",
   "license": "GPL-3.0-only",
   "author": {
     "name": "Julian Consoli"
