@@ -21,18 +21,18 @@ See [`src/sample.html`](/src/sample.html) for functioning examples.
 The basic premise is to first initialize a "chart" class, like so:
 ```javascript
 const chart = new SvgCircleChart(
-	'my-chart',							// Your element ID where the chart will be injected
-	false,								// Whether or not to allow empty values
-	new Intl.NumberFormat('en-US', {	// Formatter for your data
-		style: 'currency',
-		currency: 'USD'
-	}),
-	"My Data",							// The name of the dataset
-	[{									// The data to plot
-		name: 'datapoint',
-		value: 100,
-		title: "Datapoint"
-	}]
+    'my-chart',                       // Your element ID where the chart will be injected
+    false,                            // Whether or not to allow empty values
+    new Intl.NumberFormat('en-US', {  // Formatter for your data
+        style: 'currency',
+        currency: 'USD'
+    }),
+    "My Data",                        // The name of the dataset
+    [{                                // The data to plot
+        name: 'datapoint',
+        value: 100,
+        title: "Datapoint"
+    }]
 );
 ```
 
@@ -40,29 +40,29 @@ All arguments for the class constructor are optional except for the element ID. 
 after the fact using the getter/setter methods.
 ```javascript
 chart.valueFormat = new Intl.NumberFormat('ja-JP', {
-	style: 'currency',
-	currency: 'JPY'
+    style: 'currency',
+    currency: 'JPY'
 });
 
 chart.dataset = [
-	"My Data",
-	[
-		{
-			name: 'datapoint-a',
-			value: 350,
-			title: "Datapoint A"
-		},
-		{
-			name: 'datapoint-b',
-			value: 750,
-			title: "Datapoint B"
-		},
-		{
-			name: 'datapoint-c',
-			value: 200,
-			title: "Datapoint C"
-		}
-	]
+    "My Data",
+    [
+        {
+            name: 'datapoint-a',
+            value: 350,
+            title: "Datapoint A"
+        },
+        {
+            name: 'datapoint-b',
+            value: 750,
+            title: "Datapoint B"
+        },
+        {
+            name: 'datapoint-c',
+            value: 200,
+            title: "Datapoint C"
+        }
+    ]
 ];
 ```
 
