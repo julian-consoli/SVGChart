@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SvgChart Samples</title>
+	<link rel="stylesheet" href="./styles.css" />
+	<script src="../dist/svgchart.js"></script>
+</head>
+
+<body>
+	<main>
+		<h1>"SvgChart" Samples</h1>
+		<hr />
+		<section>
+			<h2>Pie Chart</h2>
+			<div id="pie-chart"></div>
+			<script type="text/javascript">
+				const pieChart = new SvgCircleChart(
+					'pie-chart',
+					false,
+					new Intl.NumberFormat('en-US', {
+						style: 'currency',
+						currency: 'USD'
+					})
+				);
+
+				pieChart.dataset = [
+					"Pie Data",
+					[
+						{
+							name: 'datapoint-a',
+							value: 350,
+							title: "Datapoint A"
+						},
+						{
+							name: 'datapoint-b',
+							value: 750,
+							title: "Datapoint B"
+						},
+						{
+							name: 'datapoint-c',
+							value: 200,
+							title: "Datapoint C"
+						}
+					]
+				];
+				pieChart.buildChart('pie');
+			</script>
+		</section>
+		<section>
+			<h2>Donut Chart</h2>
+			<div id="donut-chart"></div>
+			<script type="text/javascript">
+				const donutChart = new SvgCircleChart(
+					'donut-chart'
+				);
+
+				donutChart.dataset = [
+					"Donut Data",
+					[
+						{
+							name: 'datapoint-a',
+							value: 1,
+							title: "Datapoint A"
+						},
+						{
+							name: 'datapoint-b',
+							value: 1,
+							title: "Datapoint B"
+						},
+						{
+							name: 'datapoint-c',
+							value: 2,
+							title: "Datapoint C"
+						},
+						{
+							name: 'datapoint-d',
+							value: 3,
+							title: "Datapoint D"
+						},
+						{
+							name: 'datapoint-e',
+							value: 5,
+							title: "Datapoint E"
+						},
+						{
+							name: 'datapoint-f',
+							value: 8,
+							title: "Datapoint F"
+						}
+					]
+				];
+				donutChart.buildChart('donut');
+			</script>
+		</section>
+	</main>
+</body>
+
+</html>
